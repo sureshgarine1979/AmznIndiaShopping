@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AmazonIndia Shopping Test">
+    <listeners>
+        <listener class-name="Reporting"></listener>
+    </listeners>
+    <test name="Amazon Product Details Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.amazon.shopping.tests.VerifyProductDetails"></class>
+        </classes>
+    </test>
+</suite>
